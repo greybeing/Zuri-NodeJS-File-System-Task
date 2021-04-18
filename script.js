@@ -12,7 +12,7 @@ let settings = { method: 'Get'};
      .then((json) => {
         const data = JSON.stringify(json, null, 4);
 
-        fs.writeFile('./posts.json', data, err => {
+        fs.writeFile('./result/posts.json', data, err => {
             if (err) {
                 console.log('Error writing file', err)
             }else {
